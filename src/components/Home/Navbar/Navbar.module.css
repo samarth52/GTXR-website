@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 2% 4% 0 4%;
+}
+
+.container > * {
+  flex: 1;
+  justify-content: center;
+}
+
+.logo {
+  width: 69px;
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  column-gap: 15%;
+}
+
+.menuItem {
+  font-size: 15px;
+  color: #acacac;
+  letter-spacing: 0.125em;
+  cursor: pointer;
+}

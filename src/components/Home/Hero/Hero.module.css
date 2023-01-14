@@ -1,0 +1,14 @@
+.container {
+  width: 100vw;
+  background: #353535;
+}
+
+.ellipseContainer {
+  display: flex;
+}
+
+.ellipse {
+  width: 50vw;
+  height: 50vw;
+  filter: blur(40px);
+}
