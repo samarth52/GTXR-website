@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  padding: 4%;
+  column-gap: 2%;
+}
+
+.number {
+  font-size: 40px;
+  font-family: "Michroma";
+}
+
+.line {
+  border: 3px solid #ffffff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5%;
+}
+
+.title {
+  display: flex;
+  column-gap: 15px;
+  font-size: 40px;
+  font-family: "Michroma";
+  color: #ffffff;
+}
+
+.description {
+  font-size: 26px;
+  color: #aeaeae;
+}
+
+.image {
+  width: 35%;
+  height: auto;
+}
