@@ -1,14 +1,133 @@
 .container {
-  width: 100vw;
-  background: #353535;
+  background: #000000;
+  letter-spacing: 0.125em;
 }
 
-.ellipseContainer {
+.headerContainer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  row-gap: 2%;
+}
+
+.headerContainer > div:first-child {
+  font-family: "Michroma";
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.headerContainer > div:nth-child(2) {
+  font-size: 16px;
+  color: #acacac;
+  padding-bottom: 0.75%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #acacac;
+  cursor: pointer;
+}
+
+.button > img {
+  width: 16px;
+  height: auto;
+}
+
+.imageContainer {
+  position: relative;
+  padding-bottom: 115vh;
+}
+
+.imageContainer > *:not(.ellipse) {
+  filter: blur(0px);
 }
 
 .ellipse {
-  width: 50vw;
-  height: 50vw;
-  filter: blur(40px);
+  filter: blur(300px);
+}
+
+.ellipse1 {
+  width: 55vmax;
+  height: 55vmax;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+}
+
+.ellipse2 {
+  width: 55vmax;
+  height: 55vmax;
+  position: absolute;
+  top: -2vh;
+  right: -3%;
+}
+
+.details {
+  font-family: "Michroma";
+  font-size: 42px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.detailsTop {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+}
+
+.detailsBottom {
+  position: absolute;
+  bottom: 9.5vh;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ff005c;
+}
+
+.image1 {
+  position: absolute;
+  top: 4.75vh;
+  left: 5%;
+  width: 37.5%;
+  height: auto;
+  box-shadow: 0px 4px 36px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+}
+
+.image2 {
+  position: absolute;
+  top: 4vh;
+  left: 44%;
+  width: 52.5%;
+  height: auto;
+  box-shadow: 0px 4px 60px 12px #000000;
+  border-radius: 4px;
+}
+
+.image3 {
+  position: absolute;
+  top: 52vh;
+  left: 3%;
+  width: 44%;
+  height: auto;
+  box-shadow: 0px 4px 38px 22px rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+}
+
+.image4 {
+  position: absolute;
+  top: 59.5vh;
+  left: 49.5%;
+  width: 44%;
+  height: auto;
+  box-shadow: 0px 4px 60px 12px rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
 }

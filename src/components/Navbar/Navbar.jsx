@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <div>
-        <img className={styles.logo} src="/logo.png" />
+        <img className={styles.logo} src="/logo.png" alt="GTXR Logo" />
       </div>
       <div className={styles.menu}>
         <div className={styles.menuItem}>PROJECTS</div>
