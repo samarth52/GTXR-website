@@ -10,6 +10,7 @@
   align-items: center;
   height: 60vh;
   row-gap: 2%;
+  text-align: center;
 }
 
 .headerContainer > div:first-child {
@@ -76,6 +77,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
+  text-align: center;
 }
 
 .detailsTop {
@@ -90,6 +92,7 @@
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #ff005c;
+  right: 0;
 }
 
 .image1 {

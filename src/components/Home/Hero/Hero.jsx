@@ -1,8 +1,34 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
-  // const [text, setText] = useState();
+  const top = useRef(null);
+  const bottom = useRef(null);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!count) setCount(Math.ceil(window.innerWidth / 1363) + 2);
+
+    const handleScroll = () => {
+      const scroll = window.scrollY;
+
+      top.current.style.transform = `translateX(${scroll * -0.5}px)`;
+      bottom.current.style.transform = `translateX(${scroll * 0.5}px)`;
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    const handleResize = () => {
+      setCount(Math.ceil(window.innerWidth / 1363) + 2);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const text = "5 PROJECTS \xa0\xa0 100+ MEMBERS \xa0\xa0 10 SPEAKERS \xa0\xa0 ".repeat(count);
 
   return (
     <div className={styles.container}>
@@ -25,13 +51,11 @@ export default function Hero() {
         <img className={styles.image3} src="hero3.png" alt="Event Picture 3" />
         <img className={styles.image2} src="hero2.png" alt="Event Picture 2" />
         <img className={styles.image4} src="hero4.png" alt="Event Picture 4" />
-        <div className={`${styles.details} ${styles.detailsTop}`}>
-          5 PROJECTS &nbsp;&nbsp; 100+ MEMBERS &nbsp;&nbsp; 10 SPEAKERS &nbsp;&nbsp; 5 PROJECTS &nbsp;&nbsp; 100+ MEMBERS &nbsp;&nbsp; 10
-          SPEAKERS
+        <div className={`${styles.details} ${styles.detailsTop}`} ref={top}>
+          {text}
         </div>
-        <div className={`${styles.details} ${styles.detailsBottom}`}>
-          5 PROJECTS &nbsp;&nbsp; 100+ MEMBERS &nbsp;&nbsp; 10 SPEAKERS &nbsp;&nbsp; 5 PROJECTS &nbsp;&nbsp; 100+ MEMBERS &nbsp;&nbsp; 10
-          SPEAKERS
+        <div className={`${styles.details} ${styles.detailsBottom}`} ref={bottom}>
+          {text}
         </div>
       </div>
     </div>
