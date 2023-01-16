@@ -1,19 +1,11 @@
 .container {
-  position: relative;
-  background-color: #181818;
   display: flex;
   flex-direction: column;
-  filter: blur(0px);
-}
-
-.line {
-  position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  height: 100%;
+  background-color: #151515;
 }
 
 .header {
-  padding: 2% 0 0;
+  padding: 2% 0 6%;
   display: flex;
   justify-content: center;
   column-gap: 13px;
@@ -21,4 +13,15 @@
   font-family: "Michroma";
   text-align: center;
   color: #ffffff;
+}
+
+.grid {
+  width: 75%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 4%;
+  row-gap: 2.5vh;
+  padding-bottom: 8%;
 }
