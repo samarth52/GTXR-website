@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  background-color: #0d0d0d;
+  height: 25vh;
+  align-items: center;
+}
+
+.container > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  color: #acacac;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+}
+
+.item {
+  cursor: pointer;
+}

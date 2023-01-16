@@ -2,6 +2,7 @@ import Navbar from "../Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import Team from "./Team/Team";
+import Footer from "../Footer/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <WhatWeDo />
       <Team />
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import styles from "./ExecBox.module.css";
 
 export default function ExecBox({ name, image, link }) {
-  console.log(image);
   return (
     <div className={styles.container}>
       <img className={styles.image} src={image} />
