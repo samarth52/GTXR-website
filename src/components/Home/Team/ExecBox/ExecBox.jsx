@@ -1,14 +1,14 @@
-import styles from "./ExecBox.module.css";
+import "./ExecBox.css";
 
 export default function ExecBox({ name, image, link }) {
   return (
-    <div className={styles.container}>
-      <img className={styles.image} src={image} />
-      <div className={styles.background} />
-      <div className={styles.name}>{name}</div>
-      <div className={styles.triangle} />
+    <div className="container">
+      <img className="image" src={image} />
+      <div className="background" />
+      <div className="name">{name}</div>
+      <div className="triangle" />
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <img className={styles.linkedin} src="/linkedin.png" alt="LinkedIn Logo" />
+        <img className="linkedin" src="/linkedin.png" alt="LinkedIn Logo" />
       </a>
     </div>
   );

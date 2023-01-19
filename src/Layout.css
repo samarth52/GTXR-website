@@ -1,0 +1,7 @@
+.LayoutContainer {
+  width: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: transparent;
+  z-index: -2;
+}

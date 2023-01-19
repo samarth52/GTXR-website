@@ -1,7 +1,10 @@
 .container {
   display: flex;
   align-items: center;
-  padding: 2% 4% 0 4%;
+  padding: 1% 4% 1% 4%;
+  background: rgba(0,0,0,.5);
+  backdrop-filter: brightness(60%);
+  backdrop-filter: blur(10px);
 }
 
 .container > * {

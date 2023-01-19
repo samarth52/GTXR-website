@@ -1,6 +1,8 @@
 .container {
   position: relative;
-  background-color: #181818;
+  background: rgba(0,0,0,.5);
+  backdrop-filter: brightness(60%);
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   filter: blur(0px);
@@ -20,5 +22,6 @@
   font-size: 40px;
   font-family: "Michroma";
   text-align: center;
+  
   color: #ffffff;
 }
