@@ -44,9 +44,9 @@ const execs = [
   },
 ];
 
-export default function Team() {
+export default function Team({ teamRef }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="team" ref={teamRef}>
       <div className={styles.header}>
         THE <div style={{ color: "#FF005C" }}>TEAM</div>
       </div>
