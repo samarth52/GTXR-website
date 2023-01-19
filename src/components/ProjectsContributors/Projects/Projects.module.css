@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ellipseContainer {
+  position: relative;
+}
+
+.ellipse {
+  filter: blur(400px);
+}
+
+.ellipse1 {
+  width: 55vmax;
+  height: 55vmax;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+}
+
+.ellipse2 {
+  width: 55vmax;
+  height: 55vmax;
+  position: absolute;
+  top: -2vh;
+  right: -3%;
+}

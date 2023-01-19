@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Layout } from "./components/blob/Layout/Layout";
 import Home from "./components/Home/Home";
@@ -21,9 +21,12 @@ function App() {
   );
 }
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>,
-  document.getElementById("root"),
+  </BrowserRouter>
 );
+
+if (module.hot) {
+  module.hot.accept();
+}
