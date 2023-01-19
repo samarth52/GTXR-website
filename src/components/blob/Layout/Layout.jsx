@@ -2,9 +2,11 @@ import React, { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import "./Layout.css";
 import { Canvas } from "react-three-fiber";
-import Effects from "./Effects";
-import MetaballSwarm from "./blob/MetaballSwarm";
-import { getDevicePixelRatio } from "./utils";
+import Effects from "../Effects/Effects";
+import MetaballSwarm from "../Metaball/MetaballSwarm";
+
+const getDevicePixelRatio = (maxDpr = 2) =>
+  typeof window !== "undefined" ? Math.min(Math.max(Math.round(window.devicePixelRatio), 1), maxDpr).toFixed(1) : "1.0";
 
 export function Layout() {
   return (

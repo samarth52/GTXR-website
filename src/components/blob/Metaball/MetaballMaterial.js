@@ -4,7 +4,7 @@ const CreateMetaballMaterial = (NUM_METABALLS) => ({
   uniforms: {
     metaballs: {
       type: "vec3",
-      value: [new Vector4(100, 100, 0)],
+      value: [new Vector4(0, 0, 100)],
     },
     resolution: { type: "vec2", value: new Vector2(0, 0) },
     red: { type: "f", value: 0.0 },
@@ -39,7 +39,7 @@ const CreateMetaballMaterial = (NUM_METABALLS) => ({
       #pragma unroll_loop_end
 
       float a = smoothstep(0.97, 0.99, v);       
-      gl_FragColor = vec4(blue, 0.8, 0.6, a - 0.3);
+      gl_FragColor = vec4(blue, 0.6, 0.6, a - 0.3);
   }
 `,
 });
