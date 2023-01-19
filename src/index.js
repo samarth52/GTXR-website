@@ -7,13 +7,11 @@ import "./styles.css";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 
@@ -21,5 +19,5 @@ ReactDOM.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );

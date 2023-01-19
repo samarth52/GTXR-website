@@ -8,15 +8,9 @@ export default function Navbar({ teamClick }) {
         <img className={styles.logo} src="/logo.png" alt="GTXR Logo" />
       </div>
       <div className={styles.menu}>
-        <div className={styles.menuItem}>
-          PROJECTS
-        </div>
-        <div className={styles.menuItem}>
-          TEAM
-        </div>
-        <div className={styles.menuItem}>
-          JOIN
-        </div>
+        <div className={styles.menuItem}>PROJECTS</div>
+        <div className={styles.menuItem}>TEAM</div>
+        <div className={styles.menuItem}>JOIN</div>
       </div>
       <div />
     </div>

@@ -8,21 +8,20 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { extend, useThree, useFrame } from "react-three-fiber";
 
 // extend({ EffectComposer, RenderPass, ShaderPass, UnrealBloomPass, FXAAShader })
-extend({ EffectComposer, RenderPass, ShaderPass, UnrealBloomPass });
+extend({
+  EffectComposer,
+  RenderPass,
+  ShaderPass,
+  UnrealBloomPass,
+});
 
-const Effects = () => {
+function Effects() {
   const { gl, scene, camera, size } = useThree();
   const composer = useRef();
 
-  const aspect = useMemo(
-    () => new THREE.Vector2(size.width, size.height),
-    [size]
-  );
+  const aspect = useMemo(() => new THREE.Vector2(size.width, size.height), [size]);
 
-  useEffect(
-    () => void composer.current.setSize(size.width, size.height),
-    [size]
-  );
+  useEffect(() => void composer.current.setSize(size.width, size.height), [size]);
 
   useFrame(() => composer.current.render(), 1);
 
@@ -32,6 +31,6 @@ const Effects = () => {
       <unrealBloomPass attachArray="passes" args={[aspect, 2, 1, 0]} />
     </effectComposer>
   );
-};
+}
 
 export default Effects;

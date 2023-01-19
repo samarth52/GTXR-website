@@ -10,7 +10,7 @@
   align-items: center;
   height: 60vh;
   row-gap: 2%;
-  
+
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   padding: 10px 20px;
   box-sizing: border-box;
   color: #acacac;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: brightness(60%);
   backdrop-filter: blur(10px);
   cursor: pointer;
