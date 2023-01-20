@@ -1,12 +1,16 @@
 import styles from "./Navbar.module.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Navbar({ teamClick }) {
+const style = {
+  background: "rgba(0, 0, 0, 0.5)",
+}
+
+export default function Navbar({ teamClick, isHome }) {
   const navigate = useNavigate();
   teamClick = teamClick || (() => navigate("/#team"));
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={isHome ? style : {}}>
       <div>
         <img className={styles.logo} src="/logo.png" alt="GTXR Logo" />
       </div>

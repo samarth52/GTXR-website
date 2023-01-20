@@ -8,7 +8,7 @@ import MetaballSwarm from "../Metaball/MetaballSwarm";
 const getDevicePixelRatio = (maxDpr = 2) =>
   typeof window !== "undefined" ? Math.min(Math.max(Math.round(window.devicePixelRatio), 1), maxDpr).toFixed(1) : "1.0";
 
-export function Layout() {
+export default function Layout() {
   return (
     <>
       <meta

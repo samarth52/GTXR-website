@@ -11,6 +11,10 @@
   flex-direction: column;
 }
 
+.innerContainer > * {
+  filter: blur(0px);
+}
+
 .header {
   font-size: 40px;
   font-family: "Michroma";
@@ -35,8 +39,7 @@
 }
 
 .ellipse {
-  filter: blur(400px);
-  z-index: -1;
+  filter: blur(250px);
   width: 34.63vmax;
   height: 34.63vmax;
   position: absolute;
@@ -48,6 +51,6 @@
 }
 
 .ellipse2 {
-  top: 7vh;
-  right: 12%;
+  top: 6vh;
+  right: 11%;
 }

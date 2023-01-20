@@ -6,7 +6,7 @@ const members = new Array(3).fill(0);
 
 export default function Home() {
   return (
-    <div className={styles.mainContainer}>
+    <div style={{backgroundColor: "#151515", minWidth: "100vw"}}>
       <Navbar />
       <div className={styles.container}>
         <div className={styles.header}>JOIN US</div>

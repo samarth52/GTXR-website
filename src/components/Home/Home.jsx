@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Layout from "../blob/Layout/Layout";
 import Navbar from "../Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
@@ -13,7 +14,8 @@ export default function Home() {
 
   return (
     <div style={{ minHeight: "100vh" }}>
-      <Navbar teamClick={teamClick} />
+      <Layout />
+      <Navbar teamClick={teamClick} isHome={true} />
       <Hero />
       <WhatWeDo />
       <Team teamRef={teamRef} />
