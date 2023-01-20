@@ -10,7 +10,6 @@
   align-items: center;
   height: 60vh;
   row-gap: 2%;
-
   text-align: center;
 }
 
@@ -57,20 +56,17 @@
 
 .ellipse {
   filter: blur(300px);
-}
-
-.ellipse1 {
   width: 55vmax;
   height: 55vmax;
   position: absolute;
+}
+
+.ellipse1 {
   top: 5vh;
   left: 0;
 }
 
 .ellipse2 {
-  width: 55vmax;
-  height: 55vmax;
-  position: absolute;
   top: -2vh;
   right: -3%;
 }

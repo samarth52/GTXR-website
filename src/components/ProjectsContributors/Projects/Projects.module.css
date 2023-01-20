@@ -1,35 +1,53 @@
 .container {
-  height: 100vh;
+  padding: 13vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .innerContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.ellipseContainer {
-  position: relative;
+.header {
+  font-size: 40px;
+  font-family: "Michroma";
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 5%;
+}
+
+.projects {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.5%;
+  row-gap: 2.5vh;
+  justify-content: center;
+}
+
+.project {
+  width: 30%;
+  height: 27vh;
+  background: #161616;
 }
 
 .ellipse {
   filter: blur(400px);
+  z-index: -1;
+  width: 34.63vmax;
+  height: 34.63vmax;
+  position: absolute;
 }
 
 .ellipse1 {
-  width: 55vmax;
-  height: 55vmax;
-  position: absolute;
-  top: 5vh;
-  left: 0;
+  top: 10vh;
+  left: 20%;
 }
 
 .ellipse2 {
-  width: 55vmax;
-  height: 55vmax;
-  position: absolute;
-  top: -2vh;
-  right: -3%;
+  top: 7vh;
+  right: 12%;
 }

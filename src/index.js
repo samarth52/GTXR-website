@@ -6,7 +6,7 @@ import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import ProjectsContributors from "./components/ProjectsContributors";
 import Join from "./components/Join/Join";
-import "./styles.css";
+import "./index.css";
 
 function App() {
   return (

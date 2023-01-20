@@ -15,6 +15,7 @@ export function Layout() {
         property="og:image"
         content="https://cdn.raster.app/blockchain-at-georgia-tech/Sb4iAtiu4B?ixlib=js-3.6.0&amp;s=ef4c765f8a020ebbb89567b2d2d73076"
       />
+      <div className="LayoutBackground" />
       <div style={{ height: "100vh" }} className="LayoutContainer">
         <Canvas gl={{ autoClear: false }} dpr={getDevicePixelRatio(1)}>
           <MetaballSwarm />
