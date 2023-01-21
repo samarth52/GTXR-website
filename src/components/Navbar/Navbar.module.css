@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  padding: 1% 4% 1% 4%;
+  padding: 2% 4%;
 }
 
 .container > * {
@@ -11,7 +11,7 @@
 
 .logo {
   width: 69px;
-  height: 40px;
+  aspect-ratio: 1.725;
 }
 
 .menu {
@@ -24,4 +24,18 @@
   color: #acacac;
   letter-spacing: 0.125em;
   cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+  .logo {
+    width: 35px;
+  }
+
+  .container {
+    padding: 5% 6%;
+  }
+
+  .menuItem {
+    font-size: 13px;
+  }
 }

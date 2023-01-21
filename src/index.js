@@ -21,7 +21,7 @@ function App() {
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
+  </BrowserRouter>,
 );
 
 if (module.hot) {

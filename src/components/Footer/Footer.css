@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 11vh;
-  background-color: #151515E0;
+  background-color: #151515e0;
   color: rgba(172, 172, 172, 0.6);
   letter-spacing: 0.43em;
 }
@@ -11,4 +11,11 @@
 .bottom {
   height: 1vh;
   background: linear-gradient(90deg, #ff005c 2.34%, #6f03c4 99.05%);
+}
+
+@media screen and (max-width: 455px) {
+  .madeBy {
+    height: 10vh;
+    font-size: 12px;
+  }
 }

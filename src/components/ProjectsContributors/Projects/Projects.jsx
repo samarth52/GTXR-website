@@ -10,7 +10,7 @@ export default function Projects() {
           <circle cx="50%" cy="50%" r="17.3vmax" fill="#FF005CCC" />
         </svg>
         <svg className={`${styles.ellipse} ${styles.ellipse2}`}>
-          <circle cx="50%" cy="50%" r="17.3vmax" fill="#250043" />
+          <circle cx="50%" cy="50%" r="17.3vmax" fill="#250063" />
         </svg>
         <div className={styles.header}>PROJECTS</div>
         <div className={styles.projects}>

@@ -25,3 +25,21 @@
 .item {
   cursor: pointer;
 }
+
+@media screen and (max-width: 455px) {
+  .container {
+    height: 19vh;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .links {
+    column-gap: 10%;
+  }
+
+  .item {
+    font-size: 12px;
+  }
+}

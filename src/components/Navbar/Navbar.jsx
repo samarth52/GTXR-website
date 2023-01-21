@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const style = {
   background: "rgba(0, 0, 0, 0.5)",
-}
+};
 
 export default function Navbar({ teamClick, isHome }) {
   const navigate = useNavigate();
