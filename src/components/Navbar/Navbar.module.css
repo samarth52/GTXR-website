@@ -24,6 +24,7 @@
   color: #acacac;
   letter-spacing: 0.125em;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 530px) {

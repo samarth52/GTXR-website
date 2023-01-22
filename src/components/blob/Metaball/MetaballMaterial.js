@@ -21,7 +21,7 @@ const CreateMetaballMaterial = (NUM_METABALLS) => ({
   precision highp float;
   uniform vec4 metaballs[${NUM_METABALLS}];
   uniform vec2 resolution;
-  uniform float blue;
+  uniform float red;
 
   void main(){
       float x = gl_FragCoord.x - .5 * resolution.x;
@@ -39,7 +39,7 @@ const CreateMetaballMaterial = (NUM_METABALLS) => ({
       #pragma unroll_loop_end
 
       float a = smoothstep(0.97, 0.99, v);       
-      gl_FragColor = vec4(blue, 0.6, 0.6, a - 0.3);
+      gl_FragColor = vec4(0.6, red, 0.6, a - 0.3);
   }
 `,
 });
