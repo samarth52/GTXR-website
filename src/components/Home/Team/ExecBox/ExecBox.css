@@ -52,3 +52,45 @@
   right: 2px;
   width: 27px;
 }
+
+@media screen and (max-width: 868px) {
+  .container {
+    width: 150px;
+    height: 187.5px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .triangle {
+    border-left: 55px solid transparent;
+    border-top: 55px solid transparent;
+    border-right: 55px solid #161616;
+  }
+
+  .linkedin {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .container {
+    width: 120px;
+    height: 150px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .triangle {
+    border-left: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #161616;
+  }
+
+  .linkedin {
+    width: 18px;
+  }
+}

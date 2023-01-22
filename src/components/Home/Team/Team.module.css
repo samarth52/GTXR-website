@@ -6,9 +6,7 @@
 
 .header {
   padding: 2% 0 4%;
-  display: flex;
   justify-content: center;
-  column-gap: 13px;
   font-size: 40px;
   font-family: "Michroma";
   text-align: center;
@@ -24,4 +22,10 @@
   column-gap: 4%;
   row-gap: 2.5vh;
   padding-bottom: 6%;
+}
+
+@media screen and (max-width: 455px) {
+  .header {
+    font-size: 30px;
+  }
 }

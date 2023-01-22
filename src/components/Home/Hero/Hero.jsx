@@ -28,7 +28,8 @@ export default function Hero() {
     };
   }, []);
 
-  const text = "5 PROJECTS \xa0\xa0 100+ MEMBERS \xa0\xa0 10 SPEAKERS \xa0\xa0 ".repeat(count);
+  const text1 = "5 PROJECTS \xa0\xa0 100+ MEMBERS \xa0\xa0 10 SPEAKERS \xa0\xa0 ".repeat(count);
+  const text2 = "10 SPEAKERS \xa0\xa0 5 PROJECTS \xa0\xa0 100+ MEMBERS \xa0\xa0 ".repeat(count);
 
   return (
     <div className={styles.container}>
@@ -45,17 +46,17 @@ export default function Hero() {
           <circle cx="50%" cy="50%" r="27.5vmax" fill="#FF005CCC" />
         </svg>
         <svg className={`${styles.ellipse} ${styles.ellipse2}`}>
-          <circle cx="50%" cy="50%" r="27.5vmax" fill="#250043" />
+          <circle cx="50%" cy="50%" r="27.5vmax" fill="#250063" />
         </svg>
         <img className={styles.image1} src="hero1.png" alt="Event Picture 1" />
         <img className={styles.image3} src="hero3.png" alt="Event Picture 3" />
         <img className={styles.image2} src="hero2.png" alt="Event Picture 2" />
         <img className={styles.image4} src="hero4.png" alt="Event Picture 4" />
         <div className={`${styles.details} ${styles.detailsTop}`} ref={top}>
-          {text}
+          {text1}
         </div>
         <div className={`${styles.details} ${styles.detailsBottom}`} ref={bottom}>
-          {text}
+          {text2}
         </div>
       </div>
     </div>

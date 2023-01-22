@@ -32,7 +32,7 @@ export default function WhatWeDo() {
       <div className={styles.line} style={{ left: "50%" }} />
       <div className={styles.line} style={{ left: "80%" }} />
       <div className={styles.header}>
-        WHAT <div style={{ color: "#FF005C" }}>WE</div> DO
+        WHAT <span style={{ color: "#FF005C" }}>WE</span> DO
       </div>
       {info.map((item, index) => (
         <InfoBox key={index} number={`${index + 1 < 10 ? "0" : ""}${index + 1}`} {...item} reverse={index % 2 !== 0} />

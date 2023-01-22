@@ -12,15 +12,20 @@
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.1);
   height: 100%;
+  z-index: -1;
 }
 
 .header {
   padding: 2% 0 0;
-  display: flex;
-  justify-content: center;
-  column-gap: 13px;
   font-size: 40px;
   font-family: "Michroma";
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (max-width: 455px) {
+  .header {
+    font-size: 27px;
+    padding: 5% 0;
+  }
 }

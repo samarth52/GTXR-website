@@ -48,7 +48,7 @@ export default function Team({ teamRef }) {
   return (
     <div className={styles.container} id="team" ref={teamRef}>
       <div className={styles.header}>
-        THE <div style={{ color: "#FF005C" }}>TEAM</div>
+        THE <span style={{ color: "#FF005C" }}>TEAM</span>
       </div>
       <div className={styles.grid}>
         {execs.map((exec, index) => (
