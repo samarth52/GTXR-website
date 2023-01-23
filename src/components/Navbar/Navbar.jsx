@@ -18,7 +18,7 @@ export default function Navbar({ teamClick, isHome }) {
         <div className={styles.menuItem} onClick={() => navigate("/projects")}>
           PROJECTS
         </div>
-        { isHome ? (
+        {isHome ? (
           <div className={styles.menuItem} onClick={teamClick}>
             TEAM
           </div>

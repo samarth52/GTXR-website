@@ -12,8 +12,11 @@ export default function InfoBox({ number, titleWhite, titleColor, description, i
     <div key={`Line${number}`} className={styles.line} />,
     <div key={`Info${number}`} className={styles.info}>
       <div key={`Title${number}`} className={styles.title}>
-        {titleWhite} <span style={{ color: "#FF005C" }}>{titleColor}</span></div>
-      <div key={`Description${number}`} className={styles.description}>{description}</div>
+        {titleWhite} <span style={{ color: "#FF005C" }}>{titleColor}</span>
+      </div>
+      <div key={`Description${number}`} className={styles.description}>
+        {description}
+      </div>
     </div>,
   ];
 
@@ -32,15 +35,13 @@ export default function InfoBox({ number, titleWhite, titleColor, description, i
   }
 
   if (!mobile) {
-    return (
-      <div className={styles.container}>{items}</div>
-    );
+    return <div className={styles.container}>{items}</div>;
   } else {
     return (
       <div className={styles.mainContainer}>
         <div className={styles.container}>{items}</div>
         {imageContainer}
       </div>
-    )
+    );
   }
 }
