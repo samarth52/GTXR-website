@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
+  const navigate = useNavigate();
   const top = useRef(null);
   const bottom = useRef(null);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    if (!count) setCount(Math.ceil(window.innerWidth / 1363) + 2);
+    setCount(Math.ceil(window.innerWidth / 1363) + 2);
 
     const handleScroll = () => {
       const scroll = window.scrollY;
@@ -36,8 +38,8 @@ export default function Hero() {
       <div className={styles.headerContainer}>
         <div>GEORGIA TECH XR</div>
         <div>GEORGIA TECH&apos;S PORTAL TO EXTENDED REALITY</div>
-        <div className={styles.button}>
-          <img src="/play.png" />
+        <div className={styles.button} onClick={() => navigate("/join")}>
+          <img src="/play.png" alt="" />
           JOIN
         </div>
       </div>
@@ -48,10 +50,10 @@ export default function Hero() {
         <svg className={`${styles.ellipse} ${styles.ellipse2}`}>
           <circle cx="50%" cy="50%" r="27.5vmax" fill="#250063" />
         </svg>
-        <img className={styles.image1} src="hero1.png" alt="Event Picture 1" />
-        <img className={styles.image3} src="hero3.png" alt="Event Picture 3" />
-        <img className={styles.image2} src="hero2.png" alt="Event Picture 2" />
-        <img className={styles.image4} src="hero4.png" alt="Event Picture 4" />
+        <img className={styles.image1} src="hero1.png" alt="Event 1" />
+        <img className={styles.image3} src="hero3.png" alt="Event 3" />
+        <img className={styles.image2} src="hero2.png" alt="Event 2" />
+        <img className={styles.image4} src="hero4.png" alt="Event 4" />
         <div className={`${styles.details} ${styles.detailsTop}`} ref={top}>
           {text1}
         </div>

@@ -19,7 +19,7 @@
 }
 
 .container:nth-child(2) {
-  padding: 12vh 0;
+  padding: 7vh 0 12vh;
 }
 
 .container:nth-child(2) > div:first-child {
@@ -44,9 +44,9 @@
   color: #ffffff;
 }
 
-.container:nth-last-child(2) {
+/*.container:nth-last-child(2) {
   width: 96%;
-}
+}*/
 
 .members {
   padding-top: 2vh;

@@ -3,7 +3,7 @@ import "./ExecBox.css";
 export default function ExecBox({ name, image, link }) {
   return (
     <div className="container">
-      <img className="image" src={image} />
+      <img className="image" src={image} alt={name} />
       <div className="background" />
       <div className="name">{name}</div>
       <div className="triangle" />

@@ -1,6 +1,5 @@
 .container {
   letter-spacing: 0.125em;
-  background: transparent;
 }
 
 .headerContainer {
@@ -9,8 +8,11 @@
   justify-content: center;
   align-items: center;
   height: 60vh;
+  width: 80%;
   row-gap: 2%;
   text-align: center;
+  justify-self: center;
+  margin: 0 auto;
 }
 
 .headerContainer > div:first-child {
@@ -22,7 +24,8 @@
 
 .headerContainer > div:nth-child(2) {
   font-size: 18px;
-  color: #acacac;
+  font-weight: 600;
+  color: #cccccc;
   padding-bottom: 0.75%;
   user-select: none;
 }
@@ -35,12 +38,13 @@
   border-radius: 6px;
   padding: 10px 20px;
   box-sizing: border-box;
-  color: #acacac;
+  color: #ffffff;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: brightness(60%);
   backdrop-filter: blur(10px);
   cursor: pointer;
   user-select: none;
+  font-weight: 600;
 }
 
 .button > img {

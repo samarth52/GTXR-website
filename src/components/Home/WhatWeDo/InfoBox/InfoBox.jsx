@@ -6,20 +6,20 @@ export default function InfoBox({ number, titleWhite, titleColor, description, i
   const { mobile } = useContext(WindowSizeContext);
 
   const items = [
-    <div key={`Number${number}`} className={styles.number} style={{ color: reverse ? "#6F03C3" : "#FF005C" }}>
+    <div key={`Number${number}`} className={styles.number}>
       {number}
     </div>,
     <div key={`Line${number}`} className={styles.line} />,
     <div key={`Info${number}`} className={styles.info}>
       <div key={`Title${number}`} className={styles.title}>
-        {titleWhite} <span style={{ color: reverse ? "#6F03C3" : "#FF005C" }}>{titleColor}</span></div>
+        {titleWhite} <span style={{ color: "#FF005C" }}>{titleColor}</span></div>
       <div key={`Description${number}`} className={styles.description}>{description}</div>
     </div>,
   ];
 
   const imageContainer = (
     <div key={`ImageContainer${number}`} className={styles.imageContainer}>
-      <img key={`Image${number}`} className={styles.image} src={image} alt={`WhatWeDo Image ${number}`} />,
+      <img key={`Image${number}`} className={styles.image} src={image} alt={`WhatWeDo ${number}`} />,
     </div>
   );
 

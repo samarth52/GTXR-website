@@ -12,7 +12,7 @@ export default function Navbar({ teamClick, isHome }) {
   return (
     <div className={styles.container} style={isHome ? style : {}}>
       <div>
-        <img className={styles.logo} src="/logo.png" alt="GTXR Logo" />
+        <img className={styles.logo} src="/logo.png" alt="GTXR Logo" onClick={() => navigate("/")} />
       </div>
       <div className={styles.menu}>
         <div className={styles.menuItem} onClick={() => navigate("/projects")}>

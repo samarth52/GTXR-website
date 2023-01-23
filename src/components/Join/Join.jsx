@@ -2,7 +2,7 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import styles from "./Join.module.css";
 
-const members = new Array(3).fill(0);
+// const members = new Array(3).fill(0);
 
 export default function Home() {
   return (
@@ -44,6 +44,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/*
       <div className={styles.container}>
         <div className={styles.header}>MEMBER HIERARCHY</div>
         <div className={styles.members}>
@@ -52,6 +53,7 @@ export default function Home() {
           ))}
         </div>
       </div>
+      */}
       <Footer />
     </div>
   );

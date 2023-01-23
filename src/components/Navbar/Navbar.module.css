@@ -12,6 +12,7 @@
 .logo {
   width: 69px;
   aspect-ratio: 1.725;
+  cursor: pointer;
 }
 
 .menu {

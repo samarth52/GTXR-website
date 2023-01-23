@@ -14,6 +14,7 @@
 .number {
   font-size: 40px;
   font-family: "Michroma";
+  color: #FF005C;
 }
 
 .line {
@@ -50,6 +51,7 @@
   aspect-ratio: 1.775;
   box-shadow: 0px 4px 36px 9px rgba(0, 0, 0, 0.25);
   border-radius: 13px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 655px) {
@@ -78,12 +80,12 @@
   }
 
   .title {
-    font-size: 24px;
+    font-size: 18px;
     overflow-wrap: unset;
   }
 
   .description {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .imageContainer {
@@ -92,5 +94,6 @@
 
   .image {
     width: 80%;
+    border-radius: 7px;
   }
 }

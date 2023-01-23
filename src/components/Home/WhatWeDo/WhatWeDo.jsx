@@ -7,21 +7,21 @@ const info = [
     titleColor: "Speakers",
     description:
       "Interact with Experienced Professionals from all cross the industry who regularly share their thoughts and expertise with the members of our community at exclusive speaker events.",
-    image: "/hero2.png",
+    image: "/WhatWeDo1.png",
   },
   {
-    titleWhite: "Experienced",
-    titleColor: "Speakers",
+    titleWhite: "Practical",
+    titleColor: "Projects",
     description:
-      "Interact with Experienced Professionals from all cross the industry who regularly share their thoughts and expertise with the members of our community at exclusive speaker events.",
-    image: "/hero2.png",
+      "Work on our signature projects in Virtual, Augmented and Mixed Realities to learn and increase your knowledge in the field and contribute in products that might add value to its users.",
+    image: "/WhatWeDo2.jpg",
   },
   {
-    titleWhite: "Experienced",
-    titleColor: "Speakers",
+    titleWhite: "Engaging",
+    titleColor: "Community",
     description:
-      "Interact with Experienced Professionals from all cross the industry who regularly share their thoughts and expertise with the members of our community at exclusive speaker events.",
-    image: "/hero2.png",
+      "Learn with and from your peers about these vast technologies and get personalized mentorship, especially if you are just starting off and want to explore these technologies.",
+    image: "/WhatWeDo3.jpg",
   },
 ];
 
