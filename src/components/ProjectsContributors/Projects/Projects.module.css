@@ -103,13 +103,13 @@
   right: 11%;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 568px) {
   .project {
-    width: 60vw;
+    width: 75vw;
   }
 
   .projectDescription {
-    font-size: 1.2vmax;
+    font-size: 1.5vmax;
   }
 }
 
@@ -133,7 +133,7 @@
 
 @media screen and (max-width: 427px) {
   .projectDescription {
-    font-size: 1vmax;
+    font-size: 1.2vmax;
   }
 }
 
@@ -144,6 +144,6 @@
   }
 
   .projectDescription {
-    font-size: 0.7vmax;
+    font-size: 0.9vmax;
   }
 }
