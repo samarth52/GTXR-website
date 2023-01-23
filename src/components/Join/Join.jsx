@@ -13,7 +13,7 @@ export default function Home() {
           <div className={styles.join_message}>Join our Slack!</div>
           <div className={styles.slack_logo_container}>
             <a href="https://join.slack.com/t/gtxrgroup/shared_invite/zt-1bfj2rjuc-IIdx2Ck6b6h8U7~OCy9Zrw">
-              <img src="/slack.png" className={styles.slack_logo}></img>
+              <img src="/slack.png" className={styles.slack_logo} alt="Slack Logo"></img>
             </a>
           </div>
         </div>
