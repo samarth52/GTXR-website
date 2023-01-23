@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Hero.module.css";
-import herovid from '../../../assets/hero2.mp4'
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -53,7 +52,9 @@ export default function Hero() {
         </svg>
         <img className={styles.image1} src="hero1.png" alt="Event 1" />
         <img className={styles.image3} src="hero3.png" alt="Event 3" />
-        <img className={styles.image2} src="hero2.gif" alt="Event 3" />
+        <video className={styles.image2} alt="Event 2" autoPlay loop muted>
+          <source src="hero2.mp4" type="video/mp4"></source>
+        </video>
         <img className={styles.image4} src="hero4.png" alt="Event 4" />
         <div className={`${styles.details} ${styles.detailsTop}`} ref={top}>
           {text1}
