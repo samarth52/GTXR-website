@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Title from "./components/Title/Title";
 import Home from "./components/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
 import ProjectsContributors from "./components/ProjectsContributors";
@@ -23,10 +24,10 @@ function App() {
   return (
     <WindowSizeContext.Provider value={{ mobile }}>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="projects" element={<ProjectsContributors />} />
-        <Route path="join" element={<Join />} />
+        <Route index element={<Title title="GTXR | Georgia Tech's Portal to Extended Reality"><Home /></Title>} />
+        <Route path="*" element={<Title title="GTXR | Not Found"><NotFound /></Title>} />
+        <Route path="projects" element={<Title title="GTXR | Projects"><ProjectsContributors /></Title>} />
+        <Route path="join" element={<Title title="GTXR | Join Us"><Join /></Title>} />
       </Routes>
     </WindowSizeContext.Provider>
   );
