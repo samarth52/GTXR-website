@@ -1,7 +1,7 @@
 .container {
   display: flex;
   background-color: #0d0d0dfa;
-  height: 25vh;
+  height: 22vh;
   align-items: center;
 }
 
@@ -13,7 +13,8 @@
 
 .links {
   color: #acacac;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 15%;
 }
 
 .column {
@@ -22,8 +23,34 @@
   row-gap: 1vh;
 }
 
+.column > a {
+  color: #acacac;
+  text-decoration: none;
+}
+
+.logoLinks > a {
+  font-size: 0;
+}
+
 .item {
   cursor: pointer;
+}
+
+.image {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(1%) saturate(67%) hue-rotate(314deg) brightness(89%) contrast(85%);
+  cursor: pointer;
+}
+
+.instagram {
+  width: 25px;
+}
+
+.email {
+  width: 25px;
+}
+
+.slack {
+  width: 23px;
 }
 
 @media screen and (max-width: 455px) {
@@ -35,12 +62,20 @@
     width: 60px;
   }
 
-  .links {
-    column-gap: 10%;
-  }
-
   .item {
     font-size: 12px;
+  }
+
+  .instagram {
+    width: 18px;
+  }
+  
+  .email {
+    width: 18px;
+  }
+
+  .slack {
+    width: 17px;
   }
 }
 
@@ -51,5 +86,17 @@
 
   .item {
     font-size: 10px;
+  }
+
+  .instagram {
+    width: 15px;
+  }
+  
+  .email {
+    width: 16px;
+  }
+
+  .slack {
+    width: 14px;
   }
 }
