@@ -8,6 +8,16 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: "#151515", minWidth: "100vw" }}>
       <Navbar />
+      <div className={styles.slack_box}>
+        <div className={styles.slack_content_container}>
+          <div className={styles.join_message}>Join our Slack!</div>
+          <div className={styles.slack_logo_container}>
+            <a href="https://join.slack.com/t/gtxrgroup/shared_invite/zt-1bfj2rjuc-IIdx2Ck6b6h8U7~OCy9Zrw">
+              <img src="/slack.png" className={styles.slack_logo}></img>
+            </a>
+          </div>
+        </div>
+      </div>
       <div className={styles.container}>
         <div className={styles.header}>JOIN US</div>
         <div className={styles.content}>
