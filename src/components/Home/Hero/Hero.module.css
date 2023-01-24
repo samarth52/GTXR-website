@@ -91,16 +91,18 @@
 
 .detailsTop {
   position: absolute;
-  top: 0;
-  color: #ffffff;
+  top: -3vh;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 .detailsBottom {
   position: absolute;
-  bottom: 9.5vh;
+  bottom: 3vh;
   color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ff005c;
+  -webkit-text-stroke-color: #ffffff;
   right: 0;
 }
 
@@ -154,7 +156,11 @@
   }
 
   .details {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .detailsBottom {
+    bottom: 5vh;
   }
 
   .image1 {

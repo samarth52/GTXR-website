@@ -39,7 +39,7 @@ const CreateMetaballMaterial = (NUM_METABALLS) => ({
       #pragma unroll_loop_end
 
       float a = smoothstep(0.97, 0.99, v);       
-      gl_FragColor = vec4(0.6, red, 0.6, a - 0.3);
+      gl_FragColor = vec4(red, 0.2, 0.6, a - 0.4);
   }
 `,
 });

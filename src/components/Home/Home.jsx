@@ -13,7 +13,7 @@ export default function Home() {
   // };
 
   return (
-    <div style={{ minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }} id="home">
       <Layout />
       {/* <Navbar teamClick={teamClick} isHome={true} /> */}
       <Navbar isHome={true} />

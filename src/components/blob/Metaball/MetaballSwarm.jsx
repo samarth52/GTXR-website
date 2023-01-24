@@ -16,15 +16,14 @@ function MetaballSwarm() {
   const [percentDownPage, setPercentDownPage] = useState(0);
 
   useEffect(() => {
-    const handleScroll = (e) => {
-      const scroll = e.target.scrollTop;
-      setPercentDownPage(scroll / e.target.scrollHeight);
+    const handleScroll = () => {
+      setPercentDownPage(0.8 - 0.7 * document.scrollingElement.scrollTop / document.scrollingElement.scrollHeight);
     };
+    handleScroll();
 
-    document.getElementById("root").addEventListener("scroll", handleScroll);
-
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      document.getElementById("root").removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -82,6 +81,8 @@ function MetaballSwarm() {
       metaballUniforms[i].set(metaball.position.x, metaball.position.y, radius);
     });
   });
+
+  console.log(percentDownPage);
 
   return (
     <mesh ref={mesh}>
