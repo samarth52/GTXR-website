@@ -24,10 +24,38 @@ function App() {
   return (
     <WindowSizeContext.Provider value={{ mobile }}>
       <Routes>
-        <Route index element={<Title title="GTXR | Georgia Tech's Portal to Extended Reality"><Home /></Title>} />
-        <Route path="*" element={<Title title="GTXR | Not Found"><NotFound /></Title>} />
-        <Route path="projects" element={<Title title="GTXR | Projects"><ProjectsContributors /></Title>} />
-        <Route path="join" element={<Title title="GTXR | Join Us"><Join /></Title>} />
+        <Route
+          index
+          element={
+            <Title title="GTXR | Georgia Tech's Portal to Extended Reality">
+              <Home />
+            </Title>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Title title="GTXR | Not Found">
+              <NotFound />
+            </Title>
+          }
+        />
+        <Route
+          path="projects"
+          element={
+            <Title title="GTXR | Projects">
+              <ProjectsContributors />
+            </Title>
+          }
+        />
+        <Route
+          path="join"
+          element={
+            <Title title="GTXR | Join Us">
+              <Join />
+            </Title>
+          }
+        />
       </Routes>
     </WindowSizeContext.Provider>
   );

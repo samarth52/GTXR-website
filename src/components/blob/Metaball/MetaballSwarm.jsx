@@ -17,7 +17,7 @@ function MetaballSwarm() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setPercentDownPage(0.8 - 0.7 * document.scrollingElement.scrollTop / document.scrollingElement.scrollHeight);
+      setPercentDownPage(0.8 - (0.7 * document.scrollingElement.scrollTop) / document.scrollingElement.scrollHeight);
     };
     handleScroll();
 
@@ -81,8 +81,6 @@ function MetaballSwarm() {
       metaballUniforms[i].set(metaball.position.x, metaball.position.y, radius);
     });
   });
-
-  console.log(percentDownPage);
 
   return (
     <mesh ref={mesh}>

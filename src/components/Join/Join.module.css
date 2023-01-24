@@ -10,7 +10,7 @@
   width: 80%;
   left: 10%;
   height: 200px;
-  background: linear-gradient(180.32deg, #FF005C 0.28%, #6F03C4 99.72%);
+  background: linear-gradient(180.32deg, #ff005c 0.28%, #6f03c4 99.72%);
   margin-bottom: 5%;
   margin-top: 2.5%;
 }
@@ -29,7 +29,7 @@
 }
 
 .join_message {
-  font-family: 'Michroma';
+  font-family: "Michroma";
   font-size: 36px;
   width: 50%;
   text-align: center;
@@ -107,7 +107,6 @@
 }
 
 @media screen and (max-width: 455px) {
-
   .join_message {
     font-size: 24px;
   }
