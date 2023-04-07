@@ -10,7 +10,7 @@
 }
 
 .madeBy > div {
-  width: 85%;
+  width: 90%;
 }
 
 .no-spacing {
@@ -30,6 +30,6 @@
 @media screen and (max-width: 455px) {
   .madeBy {
     height: 10vh;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
