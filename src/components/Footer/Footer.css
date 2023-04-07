@@ -10,7 +10,7 @@
 }
 
 .madeBy > div {
-  width: 85%;
+  width: 90%;
 }
 
 .no-spacing {
@@ -31,6 +31,5 @@
   .madeBy {
     height: 10vh;
     font-size: 10px;
-    line-height: 1.5;
   }
 }
