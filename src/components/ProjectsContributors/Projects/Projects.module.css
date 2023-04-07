@@ -1,5 +1,5 @@
 .container {
-  padding: 8vh 0;
+  padding: 3vh 0 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   font-family: "Michroma";
   text-align: center;
   color: #ffffff;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .projects {

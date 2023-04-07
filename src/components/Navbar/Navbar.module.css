@@ -28,6 +28,11 @@
   text-decoration: none;
 }
 
+.menuItem > a {
+  color: #acacac;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 530px) {
   .logo {
     width: 35px;

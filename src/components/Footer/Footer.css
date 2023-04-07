@@ -9,6 +9,19 @@
   text-align: center;
 }
 
+.madeBy > div {
+  width: 85%;
+}
+
+.no-spacing {
+  letter-spacing: 0;
+}
+
+.madeBy > div > a {
+  color: rgba(172, 172, 172);
+  text-decoration: underline;
+}
+
 .bottom {
   height: 1vh;
   background: linear-gradient(90deg, #ff005c 2.34%, #6f03c4 99.05%);

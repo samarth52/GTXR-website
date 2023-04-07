@@ -11,7 +11,7 @@ export default function Links() {
           <a href="/">
             <div className={styles.item}>HOME</div>
           </a>
-          <a href="/projects">
+          <a href="https://github.com/GeorgiaTech-XR" target="_blank" rel="noopener noreferrer">
             <div className={styles.item}>PROJECTS</div>
           </a>
           <a href="/join">
