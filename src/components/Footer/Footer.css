@@ -30,6 +30,7 @@
 @media screen and (max-width: 455px) {
   .madeBy {
     height: 10vh;
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 1.5;
   }
 }
