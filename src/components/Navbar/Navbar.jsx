@@ -15,8 +15,10 @@ export default function Navbar({ teamClick, isHome }) {
         <img className={styles.logo} src="/logo.png" alt="GTXR Logo" onClick={() => navigate("/")} />
       </div>
       <div className={styles.menu}>
-        <div className={styles.menuItem} onClick={() => navigate("/projects")}>
-          PROJECTS
+        <div className={styles.menuItem}>
+          <a href="https://github.com/GeorgiaTech-XR" target="_blank" rel="noopener noreferrer">
+            PROJECTS
+          </a>
         </div>
         {isHome ? (
           <div className={styles.menuItem} onClick={teamClick}>

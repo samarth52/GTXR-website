@@ -1,8 +1,7 @@
 .container {
   width: 85%;
   justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .slack_box {
@@ -107,6 +106,14 @@
 }
 
 @media screen and (max-width: 455px) {
+  .slack_box {
+    height: 100px;
+  }
+
+  .slack_content_container {
+    height: 90px;
+  }
+
   .join_message {
     font-size: 24px;
   }
